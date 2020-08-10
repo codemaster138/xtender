@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const File = require('./lib/easyfs');
 const debug = require('debug')('authy:server');
 const error = require('./lib/error');
