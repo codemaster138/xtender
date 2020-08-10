@@ -33,7 +33,7 @@ function readConf(src) {
         let data = File(src).readToStringSync();
         conf = yaml.parse(data) || {};
         if (conf.extends) {
-            conf = {...readConf(path.join(process.cwd(), conf.extends)), ...conf};
+            conf = {...readConf(conf.extends), ...conf};
         }
     } catch (err){
         error(`${err.message}`);
