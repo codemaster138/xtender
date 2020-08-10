@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 const File = require('./lib/easyfs');
-const debug = require('debug')('authy:server');
+const debug = require('debug')('xtender');
 const error = require('./lib/error');
 const yargs = require('yargs');
 const yaml = require('yaml');
