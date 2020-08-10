@@ -2,7 +2,7 @@
   "name": "xtender",
   "version": "1.0.0",
   "description": "...",
-  "main": "loader.js",
+  "main": "./loader",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
