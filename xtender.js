@@ -1,4 +1,4 @@
-const error = require('../lib/error');
+const error = require('./lib/error');
 const debug = require('debug')('plugins:host');
 const path = require('path');
 const find = require('lodash.find');

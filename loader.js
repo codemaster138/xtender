@@ -3,7 +3,7 @@ const debug = require('debug')('authy:server');
 const error = require('./lib/error');
 const yargs = require('yargs');
 const yaml = require('yaml');
-const authy = require('./core/extender.js')();
+const authy = require('./xtender.js')();
 const path = require('path');
 debug("Authy starting up...");
 
@@ -30,17 +30,17 @@ function readConf(src) {
     let conf;
     try {
         let data = File(src).readToStringSync();
-        conf = yaml.parse(data);
+        conf = yaml.parse(data) || {};
         if (conf.extends) {
             conf = {...readConf(path.join(process.cwd(), conf.extends)), ...conf};
         }
-    } catch {
-        error(`Configuration file not found: ${src}`);
+    } catch (err){
+        error(`${err.message}`);
         process.exit(1);
     }
     return conf
 }
-const config = readConf(argv.config || 'authy.config.yaml');
+const config = readConf(argv.config || 'xtender.config.yaml');
 
 debug('Config loaded.')
 debug('Loading Plugins...');
