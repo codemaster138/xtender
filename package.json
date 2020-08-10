@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/codemaster138/xtender/issues"
   },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "lodash.find": "^4.6.0",
+    "yaml": "^1.10.0",
+    "yargs": "^15.4.1"
+  },
   "homepage": "https://github.com/codemaster138/xtender#readme"
 }
