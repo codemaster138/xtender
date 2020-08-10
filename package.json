@@ -1,0 +1,19 @@
+{
+  "name": "xtender",
+  "version": "1.0.0",
+  "description": "...",
+  "main": "loader.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codemaster138/xtender.git"
+  },
+  "author": "Jake Sarjeant <pygamer138@gmail.com>",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/codemaster138/xtender/issues"
+  },
+  "homepage": "https://github.com/codemaster138/xtender#readme"
+}
